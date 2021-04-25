@@ -1,0 +1,182 @@
+*{
+    font-family: "Montserrat",sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.375rem;
+    color: #191919;
+
+}
+.rob{
+    font-family: "Roboto",sans-serif;
+}
+
+body
+{
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.375rem;
+    text-rendering: optimizeLegibility;
+    text-shadow: 0 0 1px transparent;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    word-break: break-word;
+}
+.ho:hover{
+    color: black;
+    text-decoration: none;
+}
+.bg-image{
+    margin-top: 65px;
+    height: 80vh;
+}
+.content{
+    padding: 7.5rem 1rem;
+}
+.fs{
+    font-size: 2.2rem;
+}
+.card{
+    transition: all 0.3s;
+    background: rgb(53, 53, 53);
+}
+.card-body{
+    background-color: rgb(247, 247, 247);
+}
+
+.card:hover{
+    box-shadow: 0 0 20px 0 rgba(66, 66, 66, 0.6);
+    transform: translateY(-13px) ; 
+}
+.card-title > h2{
+    font-size: 0.75rem;
+    font-weight: bold;
+    opacity: 0.6;
+    font-family: "Roboto", sans-serif;
+    color: #191919;
+    text-align: center;
+}
+.card-text {
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #191919;
+    text-align: center;
+}
+.bottm-con{
+    padding: 4rem ;
+}
+.bottm-sub{
+    font-family: "Roboto",sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #191919;
+    font-size: 1.5rem;
+}
+footer{
+    background-color: rgb(156, 156, 156);
+    margin-top: auto;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    background-color: #f5f5f5;
+    color: #4a90e2;
+}
+.fcontainer{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.fcontainer >a{
+    text-decoration: none;
+
+}
+.mr2{
+    margin-right: 2em;
+}
+i{
+    color: #4a90e2  ;
+    margin-right: 0.8rem;
+}
+li{
+    display: inline;
+}
+.cc-container{
+    max-width: 800px;
+    padding: 4rem 1rem;
+    margin: 0 auto;
+
+
+}
+.course-container{
+    padding: 4rem 0 2rem 0;
+}
+
+.active {
+    border-bottom: 1px solid black;
+}
+.prod-search-form{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.prod-col-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 0 1rem;
+    padding-left: 0 ;
+}
+
+.products__collections-list-item {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0;
+    line-height: 1;
+}
+.products__collections-list-item:hover{
+    border-bottom: 1px solid black;
+    text-decoration: none;
+ }
+ 
+    
+@media (min-width: 768px){
+.products__collections-list-item {
+        display: inline-block;
+        width: auto;
+        margin: 0 1rem 0 0;
+}}
+
+
+.products__search-box {
+    min-width: 100%;
+    margin: 0 0 1rem auto;
+}
+@media (min-width: 768px){
+.products__search-box {
+    min-width: 20rem;
+}}
+.form-search {
+    display: block;
+    position: relative;
+}
+.search{
+    background-color: rgb(219, 219, 219);
+}
+.search:hover{
+    border: 2px solid black;
+}
+.list-cont{
+    color: #b8a88f;
+}
+.list-cont:hover{
+
+    text-decoration: none;  
+    
+}
+.img-inst{
+    margin: 4rem 0;
+}
+.inst-name{
+    padding: 2rem;
+}
