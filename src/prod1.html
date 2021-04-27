@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../style/bootstrap-4.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../style/bootstrap-4.3.1-dist/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
   <link
   href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css"
@@ -20,7 +20,7 @@
 />  
 <style>
   .accordion {
-    background-color: #ddd;
+    background-color: rgba(150, 150, 150, 0.1);
     color: #191919;
     cursor: pointer;
     padding: 18px;
@@ -30,19 +30,20 @@
     outline: none;
     font-size: 15px;
     transition: 0.4s;
-    margin-bottom: 2px;
+    margin-bottom: 0px;
   }
   
   .active, .accordion:hover {
-    background-color: #999;
+    background-color:  rgba(150, 150, 150, 0.3);
   }
   
   .panel {
     padding: 0 18px;
-    background-color: #999;
+    background-color: rgba(150, 150, 150, 0.3);
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+    margin-bottom: 2px;
   }
   </style>
 
@@ -51,7 +52,7 @@
     <!-- Navbar -->
     
     <div class="container">
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light p-3" style="margin: 0 3rem" >
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light p-4" style="margin: 0 " >
             <a class="navbar-brand" href="../index.html">
                 <img src="../img/logo.png" alt="" height="23px">
             </a>
@@ -65,10 +66,13 @@
                               
               </ul>
               <div class="form-inline my-2 my-lg-0 text-capitalize">
-                <a href="" class="px-2 text-capitalize ho">all courses</a>
-                <a href="" class="px-2 text-capitalize ho">sign in</a>
-                <button class="btn btn-primary rounded-pill ho" >
-                Get started Now </button>
+                <div class="nav-items">
+
+                  <a href="" class="px-2 text-uppercase ho">all courses</a>
+                  <a href="" class="px-2 text-uppercase ho">sign in</a>
+                  <button class="btn btn-outline-primary rounded-pill ho text-uppercase" >
+                    Get started Now </button>
+                  </div>
             </div>
           </div>
           </nav>
@@ -102,10 +106,10 @@
     <!-- <div style="background-color: grey; height: 100vh;"> -->
       
       <!-- Collapse buttons -->
-      <button class="accordion text-capitalize"><span class="ml-2 mr-5">1</span> module 1 : introduction to blockchain</button>
-<div class="panel">
+      <button class="accordion text-capitalize" style="" ><span class="ml-2 mr-5">1</span> module 1 : introduction to blockchain</button>
+<div class="panel" style="margin-bottom: 2px;" >
   <ul>
-    <li class="text-capitalize">the bitcoin revolution</li><br>
+    <li class="text-capitalize text-start">the bitcoin revolution</li><br>
     <li class="text-capitalize">the bitcoin revolution</li>
     <li class="text-capitalize">the bitcoin revolution</li>
     <li class="text-capitalize">the bitcoin revolution</li>
