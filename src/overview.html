@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>products</title>
+    <title>Overview</title>
     <link rel="stylesheet" href="../style/bootstrap-4.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../style/bootstrap-4.3.1-dist/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -15,33 +15,42 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
     <style>
         .accordion {
-          background-color: rgba(150, 150, 150, 0.1);
-          color: #191919;
-          cursor: pointer;
-          padding: 18px;
-          width: 100%;
-          border: none;
-          text-align: left;
-          outline: none;
-          font-size: 15px;
-          transition: 0.4s;
-          margin-bottom: 0px;
+            background-color: rgba(150, 150, 150, 0.1);
+            color: #191919;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+            margin-bottom: 0px;
+            text-transform: capitalize;
+            font-weight: bold;
         }
-        
-        .active, .accordion:hover {
-          background-color:  rgba(150, 150, 150, 0.3);
+
+        .active,
+        .accordion:hover {
+            background-color: rgba(150, 150, 150, 0.3);
         }
-        
+
         .panel {
-          padding: 0 18px;
-          background-color: rgba(150, 150, 150, 0.3);
-          max-height: 0;
-          overflow: hidden;
-          transition: max-height 0.2s ease-out;
-          margin-bottom: 2px;
+            padding: 0 18px;
+            background-color: rgba(150, 150, 150, 0.3);
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            margin-bottom: 2px;
         }
-        </style>
-    
+
+        .panel li {
+            font-family: "Roboto", sans-serif;
+            padding: 0.5rem;
+            text-transform: capitalize;
+        }
+    </style>
+
 
 </head>
 
@@ -113,37 +122,41 @@
     <section>
 
         <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-9">
-              <div class="bottm-con text-start">
-    
-                <h1>Interested in enrolling?</h1>
-                <div class="bottm-sub mt-4">
-                    We are currently making updates to this course. However, if you are interested in signing up, send us an email and we will work with you to figure out the best timeline for getting registered for this course.
-                </div>
-            
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="bottm-con text-start">
 
-                <div class="form-group">
-                  <label for="exampleInputEmail1"></label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="Enter email">
+                        <h1>Interested in enrolling?</h1>
+                        <div class="bottm-sub mt-4">
+                            We are currently making updates to this course. However, if you are interested in signing
+                            up, send us an email and we will work with you to figure out the best timeline for getting
+                            registered for this course.
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1"></label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault"
+                                style="font-family: 'Roboto',SANS-SERIF;">
+                                Yes please, save my details so you can send me educational content that is relevant and
+                                helpful.
+                            </label><br>
+
+
+                        </div>
+                        <button class="btn btn-info rounded-pill   my-3">Submit</button>
+                    </div>
                 </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault" style="font-family: 'Roboto',SANS-SERIF;">
-                    Yes please, save my details so you can send me educational content that is relevant and helpful.
-                  </label><br>
-                  
-    
-                </div>
-                <button class="btn btn-info rounded-pill   my-3">Submit</button>
-              </div>
             </div>
-          </div>
         </div>
-      </section>
+    </section>
 
-    
+
 
 
 
@@ -154,85 +167,203 @@
         <!-- <div style="background-color: grey; height: 100vh;"> -->
 
         <!-- Collapse buttons -->
-        <button class="accordion text-capitalize"><span class="ml-2 mr-5">1</span>Introduction <i class="fas fa-angle-down text-dark" style="float: right;"></i></button>
+        <button class="accordion text-capitalize"><span class="ml-2 mr-5">1</span>Introduction <i
+                class="fas fa-angle-down text-dark" style="float: right;"></i></button>
         <div class="panel">
             <ul class="text-start">
-                <li class="text-capitalize rob p-2"><i class="far fa-file-alt"></i>Welcome</li>
-                <li class="text-capitalize rob p-2"><i class="far fa-file-alt"></i>About You</li>
-                <li class="text-capitalize p-2"><i class="far fa-file-alt"></i>Promotional matereial opt in</li>
-                <li class="text-capitalize p-2"><i class="far fa-file-alt"></i>how to be successful in this course</li>
+                <li><i class="far fa-file-alt"></i>Welcome</li>
+                <li><i class="far fa-file-alt"></i>About You</li>
+                <li><i class="far fa-file-alt"></i>Promotional matereial opt in</li>
+                <li><i class="far fa-file-alt"></i>how to be successful in this course</li>
             </ul>
         </div>
-        <button class="accordion text-capitalize"><span class="ml-2 mr-5">1</span>Introduction <i class="fas fa-angle-down text-dark" style="float: right;"></i></button>
+        <button class="accordion text-capitalize"><span class="ml-2 mr-5">2</span>Tools for the Course<i
+                class="fas fa-angle-down text-dark" style="float: right;"></i></button>
         <div class="panel">
             <ul class="text-start">
-                <li class="text-capitalize p-2"><i class="far fa-file-alt"></i>Welcome</li>
-                <li class="text-capitalize p-2"><i class="far fa-file-alt"></i>About You</li>
-                <li class="text-capitalize p-2"><i class="far fa-file-alt"></i>Promotional matereial opt in</li>
-                <li class="text-capitalize p-2"><i class="far fa-file-alt"></i>how to be successful in this course</li>
+                <li><i class="far fa-file-alt"></i>Slack</li>
+                <li><i class="far fa-file-alt"></i>GitHub</li>
+                <li><i class="far fa-file-alt"></i>Visual Studio Code (Optional)</li>
+                <li><i class="far fa-file-alt"></i>Oracle VM VirtualBox (Optional)</li>
             </ul>
         </div>
-        <button class="accordion text-capitalize"><span class="ml-2 mr-5">1</span>Introduction <i class="fas fa-angle-down text-dark" style="float: right;"></i></button>
+        <button class="accordion text-capitalize"><span class="ml-2 mr-5">3</span>Module 1: Review of Blockchain
+            Technology<i class="fas fa-angle-down text-dark" style="float: right;"></i></button>
         <div class="panel">
             <ul class="text-start">
-                <li class="text-capitalize p-2"><i class="far fa-file-alt"></i>Welcome</li>
-                <li class="text-capitalize p-2"><i class="far fa-file-alt"></i>About You</li>
-                <li class="text-capitalize p-2"><i class="far fa-file-alt"></i>Promotional matereial opt in</li>
-                <li class="text-capitalize p-2"><i class="far fa-file-alt"></i>how to be successful in this course</li>
+                <li><i class="far fa-file-alt"></i>Welcome to Module 1: Review of Blockchain Technology</li>
+                <li><i class="far fa-file-alt"></i>Module 1 Pre-Assessment (Not Graded)                </li>
+                <li><i class="far fa-file-alt"></i>Contextualizing Blockchain                           </li>
+                <li><i class="far fa-file-alt"></i>1.1 Distributed Ledgers                               </li>
+                <li><i class="far fa-file-alt"></i>1.2 Consensus Mechanisms                             </li>
+                <li><i class="far fa-file-alt"></i>1.3 Mining in Ethereum                               </li>
+                <li><i class="far fa-file-alt"></i>1.4 Public and Private Blockchains                   </li>
             </ul>
         </div>
-        <button class="accordion text-capitalize"><span class="ml-2 mr-5">1</span>Introduction <i class="fas fa-angle-down text-dark" style="float: right;"></i></button>
+        <button class="accordion text-capitalize"><span class="ml-2 mr-5">4</span>Module 2: Blockchain Primitives <i
+                class="fas fa-angle-down text-dark" style="float: right;"></i></button>
         <div class="panel">
             <ul class="text-start">
-                <li class="text-capitalize p-2"><i class="far fa-file-alt"></i>Welcome</li>
-                <li class="text-capitalize p-2"><i class="far fa-file-alt"></i>About You</li>
-                <li class="text-capitalize p-2"><i class="far fa-file-alt"></i>Promotional matereial opt in</li>
-                <li class="text-capitalize p-2"><i class="far fa-file-alt"></i>how to be successful in this course</li>
+                <li><i class="far fa-file-alt"></i>Welcome to Module 2: Blockchain Primitives       </li>
+                <li><i class="far fa-file-alt"></i>Module 2 Pre-Assessment (Not Graded)              </li>
+                <li><i class="far fa-file-alt"></i> 2.1 Cryptographic Hash Functions               </li>
+                <li><i class="far fa-file-alt"></i>2.1.1 Playing with Cryptographic Hash Functions</li>
+                <li><i class="far fa-file-alt"></i>2.2 Public Key Cryptograph                     </li>
+                <li><i class="far fa-file-alt"></i>2.3 Merkle Trees                                </li>
+                <li><i class="far fa-file-alt"></i> 2.3.1 Playing with Merkle Trees                 </li>
+                <li><i class="far fa-file-alt"></i> Module 2 Test                                   </li>
+
+            </ul>
+        </div>
+        <button class="accordion text-capitalize"><span class="ml-2 mr-5">5</span>Module 3: Ethereum Basics< <i
+                class="fas fa-angle-down text-dark" style="float: right;"></i></button>
+        <div class="panel">
+            <ul class="text-start">
+                <li><i class="far fa-file-alt"></i>Welcome</li>
+                <li><i class="far fa-file-alt"></i>About You</li>
+                <li><i class="far fa-file-alt"></i>Promotional matereial opt in</li>
+                <li><i class="far fa-file-alt"></i>how to be successful in this course</li>
             </ul>
         </div>
 
-        
+        <button class="accordion text-capitalize"><span class="ml-2 mr-5">6</span>Module 4: Traditional and
+            Decentralized Application Development <i class="fas fa-angle-down text-dark"
+                style="float: right;"></i></button>
+        <div class="panel">
+            <ul class="text-start">
+                <li><i class="far fa-file-alt"></i>Welcome</li>
+                <li><i class="far fa-file-alt"></i>About You</li>
+                <li><i class="far fa-file-alt"></i>Promotional matereial opt in</li>
+                <li><i class="far fa-file-alt"></i>how to be successful in this course</li>
+            </ul>
+        </div>
+        <button class="accordion text-capitalize"><span class="ml-2 mr-5">7</span>Module 5: Development Frameworks and
+            Environment <i class="fas fa-angle-down text-dark" style="float: right;"></i></button>
+        <div class="panel">
+            <ul class="text-start">
+                <li><i class="far fa-file-alt"></i>Welcome</li>
+                <li><i class="far fa-file-alt"></i>About You</li>
+                <li><i class="far fa-file-alt"></i>Promotional matereial opt in</li>
+                <li><i class="far fa-file-alt"></i>how to be successful in this course</li>
+            </ul>
+        </div>
+        <button class="accordion text-capitalize"><span class="ml-2 mr-5">8</span> Module 6: Solidity Fundamentals<i
+                class="fas fa-angle-down text-dark" style="float: right;"></i></button>
+        <div class="panel">
+            <ul class="text-start">
+                <li><i class="far fa-file-alt"></i>Welcome</li>
+                <li><i class="far fa-file-alt"></i>About You</li>
+                <li><i class="far fa-file-alt"></i>Promotional matereial opt in</li>
+                <li><i class="far fa-file-alt"></i>how to be successful in this course</li>
+            </ul>
+        </div>
+        <button class="accordion text-capitalize"><span class="ml-2 mr-5">9</span>Module 7: Writing Smart Contracts <i
+                class="fas fa-angle-down text-dark" style="float: right;"></i></button>
+        <div class="panel">
+            <ul class="text-start">
+                <li><i class="far fa-file-alt"></i>Welcome</li>
+                <li><i class="far fa-file-alt"></i>About You</li>
+                <li><i class="far fa-file-alt"></i>Promotional matereial opt in</li>
+                <li><i class="far fa-file-alt"></i>how to be successful in this course</li>
+            </ul>
+        </div>
+        <button class="accordion text-capitalize"><span class="ml-2 mr-5">10</span>Module 8: Ethereum and the End User
+            <i class="fas fa-angle-down text-dark" style="float: right;"></i></button>
+        <div class="panel">
+            <ul class="text-start">
+                <li><i class="far fa-file-alt"></i>Welcome</li>
+                <li><i class="far fa-file-alt"></i>About You</li>
+                <li><i class="far fa-file-alt"></i>Promotional matereial opt in</li>
+                <li><i class="far fa-file-alt"></i>how to be successful in this course</li>
+            </ul>
+        </div>
+        <button class="accordion text-capitalize"><span class="ml-2 mr-5">11</span>Module 9: Smart Contracts Pitfalls,
+            Testing and Debugging<i class="fas fa-angle-down text-dark" style="float: right;"></i></button>
+        <div class="panel">
+            <ul class="text-start">
+                <li><i class="far fa-file-alt"></i>Welcome</li>
+                <li><i class="far fa-file-alt"></i>About You</li>
+                <li><i class="far fa-file-alt"></i>Promotional matereial opt in</li>
+                <li><i class="far fa-file-alt"></i>how to be successful in this course</li>
+            </ul>
+        </div>
+        <button class="accordion text-capitalize"><span class="ml-2 mr-5">12</span>Module 10: Advanced Topics<i
+                class="fas fa-angle-down text-dark" style="float: right;"></i></button>
+        <div class="panel">
+            <ul class="text-start">
+                <li><i class="far fa-file-alt"></i>Welcome</li>
+                <li><i class="far fa-file-alt"></i>About You</li>
+                <li><i class="far fa-file-alt"></i>Promotional matereial opt in</li>
+                <li><i class="far fa-file-alt"></i>how to be successful in this course</li>
+            </ul>
+        </div>
+        <button class="accordion text-capitalize"><span class="ml-2 mr-5">13</span>Module 11: Additional Topics<i
+                class="fas fa-angle-down text-dark" style="float: right;"></i></button>
+        <div class="panel">
+            <ul class="text-start">
+                <li><i class="far fa-file-alt"></i>Welcome</li>
+                <li><i class="far fa-file-alt"></i>About You</li>
+                <li><i class="far fa-file-alt"></i>Promotional matereial opt in</li>
+                <li><i class="far fa-file-alt"></i>how to be successful in this course</li>
+            </ul>
+        </div>
+
+
+
     </div>
     <!-- Collapse buttons -->
 
-    <!-- video section -->
-    <div class="d-flex justify-content-center align-items-center"
-        style="background-color: grey; width: 100vw; height: 60vh; margin-bottom: 3rem;">
-        <button class="btn">
-            <i class="far fa-play-circle fa-4x text-dark"></i>
-        </button>
-    </div>
-    <!-- video section -->
+    <div class="course-container text-center">
+        <h1 style="font-size: 2.2rem; margin-bottom: 4rem;">Categories</h1>
+        <div class="container">
 
-    <div class="container" style="padding: 4rem 0 4rem;">
-        <div class="text-center">
-            <h1 style="margin-bottom: 2rem;">Sign Up Today</h1>
-            <div style="width: 66%; margin: 0 auto 0 auto;">
-                <p>Blockchain Essentials 2021 is our latest, definitive introduction to blockchain for anyone who wants
-                    to learn more about the technology. In this course, we go beyond Bitcoin and look at the future of
-                    blockchain, cryptocurrency, tokens, and new, modern, and next-generation blockchain implementations
-                    like Ethereum— a blockchain that many observers believe has the
-                    promise to revolutionize business and usher in a new age of the internet, with its “world computer”.
-                </p>
-                <button class="btn btn-primary rounded-pill" style="margin-top: 3rem;">Buy Now</button>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <a href="./all.html" style="text-decoration: none;">
+                        <div class="card">
+                            <img class="card-img-top" src="../img/All-content.jpg" alt="Card image cap">
+                            <div class="card-body p-4">
+                                <h3 style="font-size: 1.25rem;">All content</h3>
+                            </div>
+                        </div>
+                    </a>
             </div>
-        </div>
-    </div>
-    <div class="container" style="margin: 4rem auto;">
-        <h1 class="text-center">Your Instructor</h1>
-        <div class="row" style="margin: 4rem auto;">
-            <div class="col-sm-6">
-                <div>
+            <div class="col-md-4">
+                     <a href="./certificates.html" style="text-decoration: none;">
+                    <div class="card">
+                        <img class="card-img-top" src="../img/Certifications.jpg" alt="Card image cap">
+                        <div class="card-body p-4">
+                            <h3 style="font-size: 1.25rem;">Certifications</h3>
+                        </div>
+                     </a>
+            </div>
+            </div>
+        </div>  
+            <div class="row mt-5 justify-content-center">
 
-                    <img src="../img/instr.jpg" alt="" class="img-fluid" style="border-radius: 9px;">
-                </div>
+                <div class="col-md-4">
+                    <a href="./courses.html" style="text-decoration: none;">
+                        <div class="card">
+                            <img class="card-img-top" src="../img/Courses.jpg" alt="Card image cap">
+                            <div class="card-body p-4">
+                                <h3 style="font-size: 1.25rem;">Courses</h3>
+                            </div>
+                        </div>
+                    </a>
             </div>
-            <div class="col-sm-6">
-                <small>Senior multimedia designer and instructor</small>
-                <H1>Nick Neslon</H1>
+            <div class="col-md-4">
+                <a href="./webinar.html" style="text-decoration: none;">
+                    <div class="card">
+                        <img class="card-img-top" src="../img/Webinars.jpg" alt="Card image cap">
+                        <div class="card-body p-4">
+                            <h3 style="font-size: 1.25rem;">Webinars</h3>
+                        </div>
+                    </div>
+                </a>
             </div>
-        </div>
+            </div>
     </div>
+</div>
 
     <footer class="footer">
         <div class="container">
@@ -282,6 +413,7 @@ font-size: 0.875rem;">
             </div>
         </div>
     </footer>
+   
 
 
 
